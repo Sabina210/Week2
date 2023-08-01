@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страница-Опросник</title>
+</head>
+
+<body>
+  <h1>Страница-Опросник</h1>
+  <form method="post">
+    <label for="pet-name">Кличка питомца:</label>
+    <input type="name" id="pet-name" name="pet-name" required />
+    <br />
+
+    <label for="owner-name">Имя владельца:</label>
+    <input type="text" id="owner-name" name="owner-name" required />
+    <br />
+
+    <label for="owner-phone">Номер телефона:</label>
+    <input type="tel" id="owner-phone" name="owner-phone" required />
+    <br />
+
+    <label for="pet-type">Вид животного:</label>
+    <select id="pet-type" name="pet-type" required>
+      <option value="">Выберите</option>
+      <option value="dog">Собака</option>
+      <option value="cat">Кошка</option>
+      <option value="bird">Птица</option>
+      <option value="fish">Рыба</option>
+      <option value="other">Другое</option>
+    </select>
+    <br />
+
+    <label for="food">Чем питается:</label>
+    <input type="checkbox" id="food" name="dry-food" value="dry-food" required />
+    <label for="food">Сухой корм</label>
+    <input type="checkbox" id="food" name="wet-food" value="wet-food" required />
+    <label for="food">Влажный корм</label>
+    <input type="checkbox" id="food" name="natural-food" value="natural-food" required />
+    <label for="food">Натуральный корм</label>
+    <br />
+
+    <label for="pet-gender">Пол:</label>
+    <input type="radio" id="pet-gender-male" name="pet-gender" value="male" required />
+    <label for="pet-gender-male">Самец</label>
+    <input type="radio" id="pet-gender-female" name="pet-gender" value="female" required />
+    <label for="pet-gender-female">Самка</label>
+    <br />
+
+    <label for="comment">Комментарий владельца</label>
+    <textarea name="comment" rows="6" cols="40"></textarea>
+    <br />
+
+    <label for="pet-photo">Приложить фото питомца</label>
+    <input type="file" id="pet-photo" name="photo" value="file" required />
+    <br />
+
+    <input type="button" value="Сохранить">
+  </form>
+</body>
+
+</html>
